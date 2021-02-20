@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    height: 120vh;
+    background-color: gray;
+    padding: 40px;
+}
+
+.content {
+    height: 80vh;
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    min-height: 25vh;
+}

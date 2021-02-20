@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(e){const t=document.createElement("p");t.textContent=1,document.querySelector("body").appendChild(t)}()})();

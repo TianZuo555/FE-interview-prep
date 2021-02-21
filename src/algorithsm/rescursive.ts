@@ -1,6 +1,7 @@
 //recursion : functions call it self
 
 function checkOdd(args: number[]): boolean {
+    let result = false;
     if (!args.length) {
         console.log('all even');
         return false;

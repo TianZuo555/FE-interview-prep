@@ -7,7 +7,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "webpack",
         "dev": "node src/index.js",
-        "pg": "ts-node src/index.ts"
+        "pg": "node src/index.js"
     },
     "keywords": [],
     "author": "",

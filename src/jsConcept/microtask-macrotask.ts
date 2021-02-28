@@ -33,7 +33,7 @@ async1 end
 promise2
 setTimeout
 */
-
+// Article micro/ macro task
 // Tips 1 Promise async is regarding then and catch
 // Tips 2 Macro --- micro -- render -- Macro -- micro
 // Tips 3 (macro)task主要包含：script(整体代码)、setTimeout、setInterval、I/O、UI交互事件、postMessage、MessageChannel、setImmediate(Node.js 环境)
@@ -54,17 +54,17 @@ async function asyncSyntaxSugar() {
 
 setTimeout((_: any) => console.log(4));
 
-new Promise<void>((resolve) => {
+new Promise<void>(resolve => {
     resolve();
     console.log(1);
-}).then((_) => {
+}).then(_ => {
     console.log(3);
     Promise.resolve()
-        .then((_) => {
+        .then(_ => {
             console.log('before timeout');
         })
-        .then((_) => {
-            Promise.resolve().then((_) => {
+        .then(_ => {
+            Promise.resolve().then(_ => {
                 console.log('also before timeout');
             });
         });

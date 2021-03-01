@@ -1,8 +1,7 @@
 //Global Execution Context -- only one
 //create global object -- window for browser
 //set this === global object
-//push to execution stack 
-
+//push to execution stack
 
 /**  
  create phrase ---- 
@@ -57,9 +56,9 @@
 
 let a = 'Hello World!';
 let b;
-var c = 'global variable'
+var c = 'global variable';
 
-//Functional Execution Context 
+//Functional Execution Context
 //stack execution Last in, First out
 function first() {
     let g = 50;
@@ -125,10 +124,8 @@ FunctionExectionContext = {
     }
 }
  */
-// push it to stack 
+// push it to stack
 first(20, 30);
 // pop it context to stack
 console.log('Inside Global Execution Context');
 // pop global context to stack
-
-

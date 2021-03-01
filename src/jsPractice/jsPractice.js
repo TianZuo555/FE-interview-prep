@@ -82,3 +82,37 @@ let obj1 = { 1: 222, 2: 123, 5: 888 };
 console.log(
     Array.from({ length: 12 }, (item, index) => obj1[index + 1] || null)
 );
+// Topic joint two arr
+
+const arr1 = [1, 1, 1, 2, 3, 4, 5, 1, 999];
+const arr2 = [3, 5, 9, 2, 19, 34, 1, 1, 1];
+
+function joinTwoArr(a1, a2) {
+    let dic = {};
+    let result = [];
+
+    for (let i = 0; i < a1.length; i++) {
+        const val1 = a1[i];
+        dic[val1] = dic[val1] ? dic[val1] + 1 : 1;
+    }
+
+    for (let j = 0; j < a2.length; j++) {
+        const val2 = a2[j];
+        if (dic[val2] && dic[val2] > 0) {
+            dic[val2] = dic[val2] - 1;
+            result.push(val2);
+        }
+    }
+
+    console.log(result);
+}
+
+// Topic assign value -- ref type, primitive type
+var a = { n: 1 };
+var b = a;
+// b = {n:1}
+a.x = a = { n: 2 };
+//a.x = {n:2} -> a = {n:1,x:{n:2}} = b
+//a = {n:2}
+console.log(a.x);
+console.log(b.x);

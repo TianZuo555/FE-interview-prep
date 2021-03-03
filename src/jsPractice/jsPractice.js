@@ -116,3 +116,19 @@ a.x = a = { n: 2 };
 //a = {n:2}
 console.log(a.x);
 console.log(b.x);
+
+//Topic convert upper to lower
+function convert(str) {
+    const arr = str.split('');
+    let result = '';
+    for (let i = 0; i < arr.length; i++) {
+        const val = arr[i];
+        val === val.toLowerCase()
+            ? (result += val.toUpperCase())
+            : (result += val.toLowerCase());
+    }
+
+    return result;
+}
+
+console.log(convert('aBBBBcDDsssEXj'));

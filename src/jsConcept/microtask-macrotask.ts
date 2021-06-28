@@ -1,3 +1,15 @@
+// why we need event loop ?
+// coz js is single thread -- modify dom
+
+// why have macro and micro
+// FILO
+
+// how that works
+// before the next macro task, all micro tasks need to be executed
+
+// node vs browser 
+// timer 
+
 async function async1() {
     console.log('async1 start');
     await async2();
